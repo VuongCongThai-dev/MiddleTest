@@ -58,9 +58,10 @@ public:
     void nhap()
     {
         cout << "Nhap ma sach: ";
-        cin >> maSach;
+        cin.ignore();
+        getline(cin, maSach);
         cout << "Nhap ten sach: ";
-        cin >> tenSach;
+        getline(cin, tenSach);
         do
         {
             cout << "Nhap gia sach: ";
